@@ -163,7 +163,8 @@ def repeated(n: fractions.Fraction, base=10, min_exp=5, limit=75):
     digits = []
     for i, ((a, b), (c, d), (e, f)) in enumerate(zip(s1, s2, s2)):
         if i > limit:
-            return None
+            from ._cabi import repeated
+            return repeated(n * fractions.Fraction(base) ** exponent, base, min_exp)
         digits.append(c)
         digits.append(e)
         if b == f:

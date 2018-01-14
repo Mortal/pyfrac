@@ -1,0 +1,14 @@
+[package]
+name = "pyfrac"
+version = "0.1.0"
+authors = ["Mathias Rav <m@git.strova.dk>"]
+
+[dependencies]
+num-bigint = "0.1.41"
+num-traits = "0.1.41"
+num-integer = "0.1.35"
+num-rational = "0.1.40"
+
+[lib]
+name = "pyfrac"
+crate-type = ["cdylib"]
